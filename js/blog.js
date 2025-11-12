@@ -1,36 +1,13 @@
 // 博客文章配置
 const posts = [
-    {
-        id: 'gromacs-simulation',
-        title: 'Gromacs分子动力学模拟实践',
-        date: '2025-11-05',
-        excerpt: '社团成员合作完成了Gromacs软件的编译和实践，成功进行了一个小规模的分子动力学模拟，加深了对科学计算软件应用的理解。',
-        tags: ['Gromacs', '分子动力学', '科学计算'],
-        file: 'posts/2025-11-05-gromacs-simulation.md'
-    },
-    {
-        id: 'hpc-basics-lecture',
-        title: 'HPC基础知识系列讲座',
-        date: '2025-10-15',
-        excerpt: '我们成功举办了第一期HPC基础知识讲座，涵盖了Linux基础、集群使用和任务调度等内容，为新成员快速入门提供了帮助。',
-        tags: ['讲座', 'HPC基础', 'Linux'],
-        file: 'posts/2025-10-15-hpc-basics-lecture.md'
-    },
-    {
-        id: 'recruitment',
-        title: '社团招新活动圆满结束',
-        date: '2025-09-20',
-        excerpt: '新学期招新活动圆满结束，欢迎所有新成员的加入！期待我们一起学习，共同进步。',
-        tags: ['招新', '活动'],
-        file: 'posts/2025-09-20-recruitment.md'
-    },
+    // 示例文章
     {
         id: 'website-launch',
         title: '网站正式上线',
-        date: '2025-09-01',
+        date: '2025-11-12',
         excerpt: 'OUCHPC社团官方网站正式上线，我们将在这里分享最新的活动信息和学习资源。',
         tags: ['公告', '网站'],
-        file: 'posts/2025-09-01-website-launch.md'
+        file: 'posts/2025-11-12-website-launch.md'
     }
 ];
 
@@ -145,12 +122,7 @@ async function loadPostContent() {
                 <i class="fas fa-exclamation-triangle"></i>
                 <h3>加载文章失败</h3>
                 <p>错误信息：${error.message}</p>
-                <p>请检查：</p>
-                <ul>
-                    <li>文章文件是否存在：<code>${post.file}</code></li>
-                    <li>是否通过HTTP服务器访问（不支持file://协议）</li>
-                    <li>浏览器控制台查看详细错误</li>
-                </ul>
+                <p>请联系管理员：ouchpc@163.com</p>
                 <a href="news.html" class="cta-button">返回文章列表</a>
             </div>
         `;
