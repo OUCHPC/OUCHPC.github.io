@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - OUCHPC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 引入marked.js用于Markdown渲染 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="OUCHPC Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="news.html">新闻动态</a>
+            <a href="join.html">加入我们</a>
+            <a href="https://github.com/OUCHPC" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header-content">
+            <h1 class="header-title">文章详情</h1>
+            <p class="header-subtitle">
+                <a href="news.html" class="breadcrumb">
+                    <i class="fas fa-arrow-left"></i> 返回新闻列表
+                </a>
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <article id="post-content" class="post-detail">
+            <!-- 文章内容将由JavaScript动态加载 -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> 加载中...
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2025 OUCHPC. Designed with ❤️.</p>
+        <p class="footer-text">获取更多信息，请访问 <a href="https://github.com/OUCHPC" class="footer-link">GitHub</a></p>
+    </footer>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>
